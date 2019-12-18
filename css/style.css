@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 50px 60px auto 60px 50px;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    background-color: #fff;
+    color: #444;
+}
+
+.header {
+    grid-column: 1/span 5;
+    grid-row: 1;
+    border-bottom: solid 2px rgb(160, 159, 159);
+}
+
+#topmenu{
+    grid-column: 1/span 5;
+    grid-row: 2;
+    background-color:rgb(255, 255, 255);
+    color:black;
+    border-bottom: solid 2px rgb(160, 159, 159);
+}
+
+.header > h1 {
+    float: left;
+}
+
+#toplink{
+    float: right;
+    margin-top: 90px;
+}
+
+#searchbar{
+    margin-top: 90px;
+    float: right;
+    margin-right: 20%;
+}
+
+#searchbar > input{
+    font-size: 20px;
+    border-radius: 25px 0 0 25px;
+    height: 35px;
+    width: 250px;
+    padding-left: 30px;
+    margin-left: -10px;
+    position: relative;
+    left: 4px;
+
+}
+
+#searchbar > button{
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+    height: 40px;
+    width: 100px;
+    background-color: #125688;
+    border: none;
+    position: relative;
+    color: white;
+}
+
+#topmenu nav {
+    text-align: center;
+}
+
+#topmenu > nav > ul > li {
+    display: inline;
+    margin: 4%;
+}
+
+#topmenu > nav > ul > li > a {
+    color: rgb(148, 147, 147);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+#topmenu > nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.filter {
+    display: flex;
+    grid-column: 3 /span 1;
+    grid-row: 3;
+    
+}
+
+.filter nav {
+    flex: 30%;
+    margin: 1.6%;
+}
+
+.filter .filter__popular,
+.filter .filter__nyarecept,
+.filter .filter__kategorier {
+    border: 1px solid rgb(119,119,119);
+}
+
+
+
+
+.galleri { /* Detta är boxen som alla recept är i */
+    display: flex; 
+    flex-wrap: wrap;
+    grid-column: 3 /span 1;
+    grid-row: 4;
+    border-radius:5px;
+} 
+
+.galleri .recept{ /* alla recept boxar, css för det som är i en ruta */
+    flex: 30%;
+    margin: 1.6%;
+    text-align: center;
+    box-shadow: 0 0 10px 0px #707070;
+}
+
+.galleri .recept:hover{ /* Om du håller musen på länken(har gjort hela receptboxen till länk) så ändras den på något sätt */
+    opacity: 1;
+}
+
+.galleri .recept a{ /* hur länkarna ska se ut, alltså hela boxen har gjort så att det inte ser ut som en länk */
+    text-decoration: none;
+    color: black;
+}
+
+.galleri .recept__img{ /* Bilderna i receptboxarna */
+    width: 100%;
+    height: 250px;
+}
+
+.galleri .recept h1{ /* alla titlars placering */
+    margin: 16px 0 0;
+}
+
+.galleri .recept p{ /* alla underrubrikers placering */
+    padding: 16px 0 22px;
+    margin: 0;
+}
+
+.galleri .recept__info{ /* tid och kategori placering */
+    display: flex;
+}
+
+.galleri .recept__info .recept__kategori, 
+.galleri .recept__info .recept__tid { /* mer om tid och kategoris placering och border på båda topparna */
+    flex: 50%;
+    padding: 16px 0;
+    border-top: 1px solid rgb(119, 119, 119);
+}
+
+.galleri .recept__info .recept__tid { /* tidens border alltså är den placerad på höger 1 streck  */
+    border-right: 1px solid rgb(119,119,119);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.sidfot {
+   grid-column: 1/ span 6;
+   grid-row: 7;
+   background-color:rgb(255, 255, 255);
+   color: rgb(148, 147, 147);
+   border-top: solid 2px rgb(148, 147, 147);
+   padding: 0.5%;
+}
+
+.sidfot p {
+padding: 0;
+margin: 0;
+float: right;
+}
+
