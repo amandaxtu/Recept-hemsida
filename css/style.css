@@ -117,6 +117,11 @@ body {
     border-radius:5px;
 } 
 
+.galleri .galleri__titel { 
+    width: 100%;
+    text-align: center;
+}
+
 .galleri .recept{ /* alla recept boxar, css för det som är i en ruta */
     flex: 30%;
     margin: 1.6%;
