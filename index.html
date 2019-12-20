@@ -8,21 +8,24 @@
 </head>
 <body> 
     <div class="site">
-        <header class="header">
+        <header class="header"> <!--Header-->
             <h1>
-                <img src="images/logo.png" alt="NomNom logo">
+                <img src="images/logo.png" alt="NomNom logo"> <!--Logga-->
 
             </h1>
-            <section id="toplink">
+            <section id="toplink"> <!--Sociala medier-->
                 <a href="#" class="fa fa-facebook"></a> 
                 <a href="#" class="fa fa-instagram"></a>
             </section>
-            <form id="searchbar">
+
+            <form id="searchbar"> <!--Sökfunktion-->
             <input type="text">
             <button>sök</button>
         </form>
+
         </header>
-        <section id="topmenu">
+
+        <section id="topmenu"> <!--Navigation-->
             <nav>
                 <ul>
                    <li><a href="#">Startsida</a></li>
@@ -33,7 +36,41 @@
             </nav>
         </section>
 
-        <main class="galleri">
+        <section class="filter"> <!--Populära, Nya, Kategorier. Flyttade upp så det hamnar i samma ordning som sidan-->
+            <nav> <!--Vet inte om nav ska vara kvar, thomas pratade om en nav tagg per sida under seminariet, däremot till en annan grupp-->
+                <h3>Populära Recept</h3>
+                <ul class="filter__popular">
+                    <li><a href="#">Omelett med bacon</a></li>
+                    <li><a href="#">Äppelpaj</a></li>
+                    <li><a href="#">Korv Stroganoff</a></li>
+                    <li><a href="#">Pankakor med sylt</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Nya Recept</h3>
+                <ul class="filter__nyarecept">
+                    
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Kategorier</h3>
+                <ul class="filter__kategorier">
+                    <li><a href="#">Glutenfritt</a></li>
+                    <li><a href="#">Laktosfritt</a></li>
+                    <li><a href="#">Vegetariskt</a></li>
+                    <li><a href="#">Veganskt</a></li>
+                </ul>
+            </nav>
+    </section>
+
+
+        <main class="galleri"> <!--Recept-->
         <h1 class="galleri__titel">Recept</h1>
             <section class="recept"> <!--Gjorde till sections istället, sematiskt korrekt-->
                 <a href="#">
@@ -119,43 +156,12 @@
                     </div>
                 </a>
             </section>
-            
+
         </main>
 
-        <section class="filter">
-                <nav>
-                    <h3>Populära Recept</h3>
-                    <ul class="filter__popular">
-                        <li><a href="#">Omelett med bacon</a></li>
-                        <li><a href="#">Äppelpaj</a></li>
-                        <li><a href="#">Korv Stroganoff</a></li>
-                        <li><a href="#">Pankakor med sylt</a></li>
-                    </ul>
-                </nav>
-    
-                <nav>
-                    <h3>Nya Recept</h3>
-                    <ul class="filter__nyarecept">
-                        
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </nav>
-    
-                <nav>
-                    <h3>Kategorier</h3>
-                    <ul class="filter__kategorier">
-                        <li><a href="#">Glutenfritt</a></li>
-                        <li><a href="#">Laktosfritt</a></li>
-                        <li><a href="#">Vegetariskt</a></li>
-                        <li><a href="#">Veganskt</a></li>
-                    </ul>
-                </nav>
-        </section>
+        
 
-        <footer class="sidfot">
+        <footer class="sidfot"> <!--Footer-->
             © 2019 This is the footer
             <p>hej</p>
         </footer>
