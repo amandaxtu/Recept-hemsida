@@ -15,6 +15,12 @@ body {
     grid-column: 1/span 5;
     grid-row: 1;
     background-color: #fff;
+    height: 280px;
+    z-index: 1;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
 
 #topmenu{
@@ -23,21 +29,23 @@ body {
     background-color:rgb(255, 255, 255);
     color:black;
     border-top: solid 1px rgb(214, 213, 213);
+    box-shadow: 0 0 10px 0px #e2e1e1;
 }
 
 .header > h1 {
     float: left;
+    margin-left: 20px;
 }
 
 #toplink{
     float: right;
-    margin-top: 90px;
+    align-items: center;
 }
 
 #searchbar{
-    margin-top: 90px;
+    margin-top: 100px;
     float: right;
-    margin-right: 20%;
+    margin-right: 30%;
 }
 
 #searchbar > input{
@@ -63,8 +71,13 @@ body {
     color: white;
 }
 
+#searchbar button:hover {
+    opacity: 0.7;
+}
+
 #topmenu nav {
     text-align: center;
+    font-size: 20px;
 }
 
 #topmenu > nav > ul > li {
@@ -73,7 +86,7 @@ body {
 }
 
 #topmenu > nav > ul > li > a {
-    color: rgb(148, 147, 147);
+    color: #444;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -211,12 +224,12 @@ body {
 .fa-facebook {
     background: #3B5998;
     color: white;
-  }
+}
 
-  .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
-  }
+}
 
 .sidfot {
    grid-column: 1/ span 6;
