@@ -169,6 +169,11 @@ body {
     color: black;
 }
 
+figure {/*för att bilderna i recept ska sträcka sig runt hela boxen*/
+    margin: 0; 
+    padding: 0;
+}
+
 .galleri .recept__img {
     overflow: hidden;
     height: 210px;
