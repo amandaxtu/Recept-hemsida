@@ -23,7 +23,7 @@ body {
     background-position: top;
 }
 
-#topmenu{
+.topmenu{
     grid-column: 1/span 5;
     grid-row: 2;
     background-color:rgb(255, 255, 255);
@@ -75,17 +75,17 @@ body {
     opacity: 0.7;
 }
 
-#topmenu nav {
+.topmenu nav {
     text-align: center;
     font-size: 20px;
 }
 
-#topmenu > nav > ul > li {
+.topmenu > nav > ul > li {
     display: inline;
     margin: 4%;
 }
 
-#topmenu > nav > ul > li > a {
+.topmenu > nav > ul > li > a {
     background-color: #5c98d6db;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -96,7 +96,7 @@ body {
 }
 
 
-#topmenu > nav > ul > li > a:hover {
+.topmenu > nav > ul > li > a:hover {
     text-decoration: underline;
 }
 
