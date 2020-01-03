@@ -221,8 +221,8 @@ figure {/*för att bilderna i recept ska sträcka sig runt hela boxen*/
 
 
 .sidfot {  /*footer*/
-   grid-column: 1/ span 6;
-   grid-row: 7;
+   grid-column: 1/ span 5;
+   grid-row: 5;
    background-color:rgb(255, 255, 255);
    color: rgb(148, 147, 147);
    border-top: solid 2px rgb(148, 147, 147);
