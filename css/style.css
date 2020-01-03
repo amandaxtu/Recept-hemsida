@@ -31,23 +31,23 @@ body {
     box-shadow: 0 0 10px 0px #e2e1e1;
 }
 
-.header > h1 {
+.header > h1 { /* Loggan uppe till vänster */
     float: left;
     margin-left: 20px;
 }
 
-#toplink{
+#toplink{ /* Sociala medier uppe till höger */
     float: right;
     align-items: center;
 }
 
-#searchbar{
+#searchbar{ /* Sökbaren */
     margin-top: 100px;
     float: right;
     margin-right: 30%;
 }
 
-#searchbar > input{
+#searchbar > input{ /* Delen av sökbaren där du skriver */
     font-size: 20px;
     border-radius: 25px 0 0 25px;
     height: 35px;
@@ -59,7 +59,7 @@ body {
     box-shadow: 0 0 10px 0px #cecbcb;
 }
 
-#searchbar > button{
+#searchbar > button{ /* Sökbarsknappen */
     font-size: 20px;
     border-radius: 0 25px 25px 0;
     height: 40px;
@@ -71,7 +71,7 @@ body {
     box-shadow: 0 0 10px 0px #cecbcb;
 }
 
-#searchbar button:hover {
+#searchbar button:hover { /* transparant sökknapp när du håller över den */
     opacity: 0.7;
 }
 
