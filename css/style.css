@@ -241,3 +241,8 @@ margin: 0;
 float: right;
 }
 
+.footer p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
