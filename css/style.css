@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.site {
+.site { /*Wrapper*/
     display: grid;
     grid-template-columns: 50px 60px auto 60px 50px;
     grid-template-rows: auto;
@@ -23,7 +23,7 @@ body {
     background-position: top;
 }
 
-.topmenu{
+.topmenu{ /*navigations område*/
     grid-column: 1/span 5;
     grid-row: 2;
     background-color:rgb(255, 255, 255);
@@ -39,7 +39,13 @@ body {
 #toplink{ /* Sociala medier uppe till höger */
     float: right;
     align-items: center;
+    margin: 0.4%;
 }
+
+#toplink img:hover { /*hover effekt över sociala medier*/
+    opacity: 0.7;
+}
+
 
 #searchbar{ /* Sökbaren */
     margin-top: 100px;
@@ -101,9 +107,7 @@ body {
 }
 
 
-
-
-.filter {
+.filter { /*Populära recept, Nya recept, Kategorier*/
     display: flex;
     grid-column: 3 /span 1;
     grid-row: 3;
@@ -216,23 +220,13 @@ figure {/*för att bilderna i recept ska sträcka sig runt hela boxen*/
 }
 
 
-.sidfot {
+.sidfot {  /*footer*/
    grid-column: 1/ span 6;
    grid-row: 7;
    background-color:rgb(255, 255, 255);
    color: rgb(148, 147, 147);
    border-top: solid 2px rgb(148, 147, 147);
    padding: 0.5%;
-}
-
-
-#toplink {
-    margin: 0.4%;
-    
-}
-
-#toplink img:hover {
-    opacity: 0.7;
 }
 
 .sidfot p {
